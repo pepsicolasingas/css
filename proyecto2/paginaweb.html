@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cinemark Hoyts</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  #header h1 {
+    font-size: 48px;
+      font-weight: bold;
+      text-align: center;
+      color: white;
+      margin-top: 50px;
+  }
+  
+  #menu {
+    display: inline-block;
+      margin-top: 20px;
+      margin-left: 50px;
+  }
+  
+  #menu a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .nav-link {
+      display: inline-block;
+      padding: 10px 20px;
+      color: white;
+      text-decoration: none;
+      transition: transform 0.3s ease-in-out;
+    }
+    
+    .nav-link:hover {
+      transform: scale(1.2);
+    }
+
+  #search {
+     display: inline-block;
+      margin-top: 20px;
+      margin-right: 50px;
+      float: right;
+  }
+  
+  #search input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    font-size: 16px;
+    width: 200px;
+    form {
+      display: flex;
+      align-items: center;
+    }
+    
+    label {
+      color: white;
+      font-size: 18px;
+      margin-right: 10px;
+    }
+    
+    input[type="text"] {
+      padding: 5px;
+      border-radius: 5px;
+      border: none;
+      font-size: 18px;
+      width: 300px;
+    }
+    
+    button[type="submit"] {
+      padding: 5px 20px;
+      border-radius: 5px;
+      border: none;
+      background-color: #e50914;
+      color: white;
+      font-size: 18px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+  }
+  h2 {
+			font-size: 48px;
+			font-weight: bold;
+			text-align: center;
+			color: white;
+			margin-top: 50px;
+		}
+        .image-container {
+			display: block;
+			flex-direction: row;
+			align-items: center;
+			margin-top: 50px;
+		}
+		.image-container p {
+      display: flex;
+			font-size: 18px;
+			color: white;
+			text-align: bottom;
+		}
+    </style>
+</head>
+<body>
+	<header id="header">
+		<h1>Cinemark Hoyts</h1>
+		<nav id="menu">
+			<a href="#" class="nav-link">Peliculas</a>
+			<a href="#" class="nav-link">Candy</a>
+			<a href="#" class="nav-link">Cine Fan</a>
+			<a href="#" class="nav-link">Regala cine</a>
+		</nav>
+	</header>
+	<div id="search">
+		<form>
+			<label for="searchBox">Buscar:</label>
+			<input type="text" id="searchBox" name="searchBox" placeholder="Buscar...">
+			<button type="submit">Buscar</button>
+		</form>
+	</div>
+	<h2>Películas 2D</h2>
+    <div class="image-container">
+      <img src="gotg.png" height="300px" alt="Imagen 1">
+		<p>GUARDIANES DE LA GALAXIA VOL 3</p>
+    <div class="image-container">
+      <img src="evildead.png" height="300px" alt="Imagen 2">
+		<p>EVIL DEAD EL DESPERTAR</p>
+    <div class="image-container">
+      <img src="mario.png" height="300px" alt="Imagen 3">
+		<p>SUPER MARIO BROS LA PELICULA</p>
+    <div class="image-container">
+      <img src="johnwick.png" height="300px" alt="Imagen 4">
+		<p>JOHN WICK 4</p>
+    <div class="image-container">
+      <img src="extorsion.png" height="300px" alt="Imagen 5">
+		<p>LA EXTORSION</p>
+    </div>
+</body>
+</html>
